@@ -5,12 +5,14 @@
 :root{
 
   /* COLORS */
-  --bg-color: #f8f7f4;
+ :root{
+  --bg-color: #faf9f6;
   --surface-color: #ffffff;
-  --primary-color: #0f0f0f;
-  --secondary-color: #555555;
-  --accent-color: #c1121f;
-  --border-color: #e4e4e4;
+  --primary-color: #111111;
+  --secondary-color: #666666;
+  --accent-color: #ff5e00;
+  --border-color: #ececec;
+}
 
   /* TYPOGRAPHY */
   --font-main: "Oswald", sans-serif;
