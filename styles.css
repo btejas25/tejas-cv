@@ -1,11 +1,50 @@
+/* =========================================
+   MODERN COLOR PALETTE SYSTEM
+========================================= */
+
 :root{
-  --bg-color: #f3f2ee;
+
+  /* ===== BACKGROUND COLORS ===== */
+
+  --bg-color: #f6f5f2;
   --surface-color: #ffffff;
+  --card-color: #fcfcfc;
 
-  --primary-text: #0f172a;
-  --secondary-text: #475569;
+  /* ===== TEXT COLORS ===== */
 
-  --accent-color: #c1121f;
+  --primary-text: #111111;
+  --secondary-text: #5c5c5c;
+  --light-text: #8c8c8c;
 
-  --border-color: #e2e8f0;
+  /* ===== BRAND / ACCENT COLORS ===== */
+
+  --accent-color: #bc0000;
+  --accent-hover: #940000;
+
+  /* ===== UI COLORS ===== */
+
+  --border-color: #e7e7e7;
+  --shadow-color: rgba(0,0,0,0.06);
+
+  /* ===== TYPOGRAPHY ===== */
+
+  --font-main: "Oswald", sans-serif;
+
+  /* ===== FONT SIZES ===== */
+
+  --hero-size: 8rem;
+  --heading-size: 4rem;
+  --subheading-size: 2rem;
+  --body-size: 1rem;
+
+  /* ===== SPACING ===== */
+
+  --section-padding: 8rem;
+  --container-padding: 5%;
+
+  /* ===== EFFECTS ===== */
+
+  --transition: 0.4s ease;
+  --radius: 24px;
+
 }
