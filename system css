@@ -1,0 +1,385 @@
+/* =========================================
+   ROOT VARIABLES
+========================================= */
+
+:root{
+
+  /* COLORS */
+  --bg-color: #f8f7f4;
+  --surface-color: #ffffff;
+  --primary-color: #0f0f0f;
+  --secondary-color: #555555;
+  --accent-color: #c1121f;
+  --border-color: #e4e4e4;
+
+  /* TYPOGRAPHY */
+  --font-main: "Oswald", sans-serif;
+
+  --hero-size: 8rem;
+  --heading-size: 4rem;
+  --body-size: 1rem;
+
+  /* SPACING */
+  --section-padding: 8rem;
+
+  /* EFFECTS */
+  --transition: 0.4s ease;
+  --radius: 20px;
+}
+
+/* =========================================
+   RESET
+========================================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:var(--bg-color);
+  color:var(--primary-color);
+  font-family:var(--font-main);
+  overflow-x:hidden;
+}
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar{
+  width:100%;
+  padding:2rem 5%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  position:fixed;
+  top:0;
+  z-index:100;
+
+  background:rgba(248,247,244,0.8);
+  backdrop-filter:blur(20px);
+}
+
+.logo{
+  font-size:2rem;
+  font-weight:700;
+  color:var(--accent-color);
+  letter-spacing:3px;
+}
+
+nav{
+  display:flex;
+  gap:2rem;
+}
+
+nav a{
+  text-decoration:none;
+  color:var(--primary-color);
+  transition:var(--transition);
+}
+
+nav a:hover{
+  color:var(--accent-color);
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero{
+  min-height:100vh;
+  padding:12rem 5% 6rem;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.hero-tag{
+  color:var(--accent-color);
+  letter-spacing:4px;
+  margin-bottom:1rem;
+}
+
+.hero h1{
+  font-size:var(--hero-size);
+  line-height:0.9;
+  margin-bottom:2rem;
+}
+
+.hero-text{
+  max-width:550px;
+  line-height:1.8;
+  color:var(--secondary-color);
+  margin-bottom:2rem;
+  font-size:1.1rem;
+}
+
+.hero-btn{
+  display:inline-block;
+  padding:1rem 2rem;
+
+  background:var(--accent-color);
+  color:white;
+
+  text-decoration:none;
+  border-radius:100px;
+
+  transition:var(--transition);
+}
+
+.hero-btn:hover{
+  transform:translateY(-5px);
+}
+
+.hero-side{
+  writing-mode:vertical-rl;
+  letter-spacing:5px;
+  color:var(--accent-color);
+}
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+.section{
+  padding:var(--section-padding) 5%;
+}
+
+.section-title{
+  display:flex;
+  align-items:center;
+  gap:2rem;
+
+  margin-bottom:4rem;
+}
+
+.section-title span{
+  color:var(--accent-color);
+  font-size:1.2rem;
+}
+
+.section-title h2{
+  font-size:var(--heading-size);
+}
+
+/* =========================================
+   ABOUT
+========================================= */
+
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:5rem;
+}
+
+.about-left h3{
+  font-size:2.8rem;
+  line-height:1.2;
+}
+
+.about-right p{
+  margin-bottom:2rem;
+  line-height:1.9;
+  color:var(--secondary-color);
+}
+
+/* =========================================
+   PROJECTS
+========================================= */
+
+.project-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:2rem;
+}
+
+.project-card{
+  background:var(--surface-color);
+
+  padding:2rem;
+
+  border:1px solid var(--border-color);
+  border-radius:var(--radius);
+
+  transition:var(--transition);
+}
+
+.project-card:hover{
+  transform:translateY(-10px);
+  border-color:var(--accent-color);
+}
+
+.project-card span{
+  color:var(--accent-color);
+}
+
+.project-card h3{
+  margin:1rem 0;
+  font-size:2rem;
+}
+
+.project-card p{
+  color:var(--secondary-color);
+  line-height:1.8;
+}
+
+/* =========================================
+   SKILLS
+========================================= */
+
+.skills-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:1rem;
+}
+
+.skill{
+  padding:1.5rem;
+  text-align:center;
+
+  border:1px solid var(--border-color);
+  border-radius:100px;
+
+  transition:var(--transition);
+}
+
+.skill:hover{
+  background:var(--accent-color);
+  color:white;
+}
+
+/* =========================================
+   QUOTE
+========================================= */
+
+.quote{
+  padding:8rem 5%;
+  text-align:center;
+}
+
+.quote h2{
+  font-size:3rem;
+  line-height:1.4;
+  max-width:1000px;
+  margin:auto;
+}
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact-box{
+  padding:4rem;
+
+  background:var(--surface-color);
+
+  border:1px solid var(--border-color);
+  border-radius:var(--radius);
+}
+
+.contact-box h3{
+  font-size:3rem;
+  margin-bottom:1rem;
+}
+
+.contact-box p{
+  color:var(--secondary-color);
+  margin-bottom:2rem;
+}
+
+.contact-box a{
+  text-decoration:none;
+  color:var(--accent-color);
+  font-size:2rem;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer{
+  padding:2rem;
+  text-align:center;
+  border-top:1px solid var(--border-color);
+}
+
+/* =========================================
+   ANIMATION
+========================================= */
+
+.hidden{
+  opacity:0;
+  transform:translateY(50px);
+  transition:all 1s ease;
+}
+
+.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media(max-width:1000px){
+
+  .hero{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .hero h1{
+    font-size:5rem;
+  }
+
+  .hero-side{
+    display:none;
+  }
+
+  .about-grid,
+  .project-grid,
+  .skills-grid{
+    grid-template-columns:1fr;
+  }
+
+}
+
+@media(max-width:600px){
+
+  .navbar{
+    flex-direction:column;
+    gap:1rem;
+  }
+
+  nav{
+    gap:1rem;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  .hero h1{
+    font-size:3.5rem;
+  }
+
+  .section-title h2{
+    font-size:2.5rem;
+  }
+
+  .about-left h3{
+    font-size:2rem;
+  }
+
+  .quote h2{
+    font-size:2rem;
+  }
+
+}
